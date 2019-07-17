@@ -3,6 +3,7 @@ const coco = {
     species: "Canine",
     nicknames: ["Cocoa Nib"],
     age: 5,
+    homeStatus: "",
     bark: function(barkFocus) {
         console.log(`Coco is barking at the ${barkFocus}`)
     },
@@ -18,6 +19,11 @@ const coco = {
         let doorStatus = window.prompt("Is the door open?")
         if (doorStatus === "yes"){
             console.log(`${coco.nicknames[0]} is out of here`)
+            this.homeStatus = "running the neighborhood"
+        }
+        else 
+        {console.log(`${coco.name} is at home`)
+        this.homeStatus = "home"
         }
     },
     
